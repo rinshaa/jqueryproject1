@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Odoo</title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/static/img/favicon.ico"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "a5cc2b8b935b21fdb0b30b760af608dd18c4e931o1702372757",
+                debug: "1",
+            };
+        </script>
+        
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+                
+                <meta name="theme-color" content="#875A7B"/>
+                <link rel="icon" sizes="192x192" href="/web/static/img/mobile-icons/android-192x192.png"/>
+
+                
+                <meta name="apple-mobile-web-app-capable" content="yes"/>
+                <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+                <link rel="apple-touch-icon" href="/web/static/img/mobile-icons/apple-152x152.png"/>
+
+                
+                <meta name="msapplication-navbutton-color" content="#875A7B"/>
+                <meta name="msapplication-TileColor" content="#875A7B"/>
+                <meta name="msapplication-TileImage" content="/web/static/img/mobile-icons/windows-144x144.png"/>
+
+                <script type="text/javascript">
+                    odoo.__session_info__ = {"uid": 2, "is_system": true, "is_admin": true, "user_context": {"lang": "en_US", "tz": "Europe/Brussels", "uid": 2}, "db": "21768900-master-all", "server_version": "16.1alpha1+e", "server_version_info": [16, 1, 0, "alpha", 1, "e"], "support_url": "https://www.odoo.com/help", "name": "Mitchell Admin", "username": "admin", "partner_display_name": "YourCompany, Mitchell Admin", "company_id": 1, "partner_id": 3, "web.base.url": "https://21768900-master-all.runbot137.odoo.com", "active_ids_limit": 20000, "profile_session": null, "profile_collectors": null, "profile_params": null, "max_file_upload_size": 134217728, "home_action_id": false, "cache_hashes": {"translations": "1dabb216dfc8c7745665f733966718dcb3629565", "load_menus": "cc60bb8333be3a19b385720122c746e6578da397f36fe6822bc6e8289901a547"}, "currencies": {"1": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "18": {"symbol": "kr", "position": "after", "digits": [69, 2]}, "2": {"symbol": "$", "position": "before", "digits": [69, 2]}}, "bundle_params": {"lang": "en_US", "debug": "1"}, "user_companies": {"current_company": 1, "allowed_companies": {"3": {"id": 3, "name": "BE Company CoA", "sequence": 10, "timesheet_uom_id": 4, "timesheet_uom_factor": 1.0}, "5": {"id": 5, "name": "My Belgian Company", "sequence": 10, "timesheet_uom_id": 4, "timesheet_uom_factor": 1.0}, "2": {"id": 2, "name": "My Company (Chicago)", "sequence": 10, "timesheet_uom_id": 4, "timesheet_uom_factor": 1.0}, "4": {"id": 4, "name": "SE Company", "sequence": 10, "timesheet_uom_id": 4, "timesheet_uom_factor": 1.0}, "1": {"id": 1, "name": "My Company (San Francisco)", "sequence": 0, "timesheet_uom_id": 4, "timesheet_uom_factor": 1.0}}}, "show_effect": true, "display_switch_company_menu": true, "user_id": [2], "max_time_between_keys_in_ms": 100, "dbuuid": "40849858-7973-11ed-81ac-0242ac110006", "warning": "admin", "expiration_date": false, "expiration_reason": false, "web_tours": [], "tour_disable": true, "notification_type": "email", "map_box_token": false, "odoobot_initialized": true, "ocn_token_key": false, "fcm_project_id": false, "inbox_action": 135, "iap_company_enrich": false, "multi_lang": true, "uom_ids": {"4": {"id": 4, "name": "Hours", "rounding": 0.01, "timesheet_widget": "float_time"}}};
+                    odoo.reloadMenus = () => fetch(`/web/webclient/load_menus/${odoo.__session_info__.cache_hashes.load_menus}`).then(res => res.json());
+                    odoo.loadMenusPromise = odoo.reloadMenus();
+                    // Block to avoid leaking variables in the script scope
+                    {
+                        const { user_context,  cache_hashes } = odoo.__session_info__;
+                        // Prefetch translations to speedup webclient. This is done in JS because link rel="prefetch"
+                        // is not yet supported on safari.
+                        fetch(`/web/webclient/translations/${cache_hashes.translations}?lang=${user_context.lang}`);
+                    }
+                </script>
+                    <link type="text/css" rel="stylesheet" href="/web/assets/2339-17366d6/web.assets_common.min.css" data-asset-bundle="web.assets_common" data-asset-version="17366d6"/>
+                    <link type="text/css" rel="stylesheet" href="/web/assets/2623-46fb741/web.assets_backend.min.css" data-asset-bundle="web.assets_backend" data-asset-version="46fb741"/>
+                <script type="text/javascript" src="/web/assets/2305-17366d6/web.assets_common.min.js" data-asset-bundle="web.assets_common" data-asset-version="17366d6"></script>
+                <script type="text/javascript" src="/web/assets/2624-46fb741/web.assets_backend.min.js" data-asset-bundle="web.assets_backend" data-asset-version="46fb741"></script>
+                <script type="text/javascript" src="/web/assets/2304-4f55675/web.assets_backend_prod_only.min.js" data-asset-bundle="web.assets_backend_prod_only" data-asset-version="4f55675"></script>
+            
+    </head>
+    <body class="o_web_client">
+        
+        
+    </body>
+</html>

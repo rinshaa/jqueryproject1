@@ -1,0 +1,244 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+section {
+    max-width: 100%;
+    width: 50%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url("/Images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    padding: 0 160px;
+}
+
+.learn {
+    color: #ffffff;
+    padding-right: 30px;
+}
+.wrapper{
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul, li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+form ul li {
+    margin:10px 20px;
+
+}
+form ul li:last-child {
+    margin:20px 0 25px 0;
+   }
+
+.signup_form{
+background: #FFFFFF;
+	padding: 40px;
+	border-radius: 10px;
+	width: 650px;
+	font-weight: bold;
+
+}
+
+
+.signup_form .title{
+	text-align: center;
+	font-size: 29px;
+	text-transform: uppercase;
+	color:  hsl(0, 100%, 74%);
+	letter-spacing: 5px;
+	font-weight: 700;
+}
+
+.form_wrap{
+	margin-top: 30px;
+
+}
+
+.form_wrap .input_wrap{
+	margin-bottom: 30px;
+	width: 35%;
+	height: 25%;
+
+
+}
+.form_wrap .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+    width: 5%;
+	margin-bottom: 1px;
+}
+.form_wrap .input_grp{
+	justify-content: space-between;
+}
+.form_wrap .input_grp  input[type="text"]{
+	width: 400px;
+}
+#radio{
+	height: 100%;
+}
+
+.form_wrap  input[type="text"]{
+	width: 100%;
+	border-radius: 3px;
+	border: 2px solid #9597a6;
+	padding: 10px;
+	outline: none;
+
+}
+
+
+.form_wrap  input[type="text"]:focus{
+	border-color: #ebd0ce;
+}
+
+.password-container{
+    position: relative;
+
+}
+.password-container input[type="password"],
+.password-container input[type="text"]{  
+    width:70%;
+	border-radius: 3px;
+	border: 2px solid #9597a6;
+	padding: 10px;
+	outline: none;
+     box-sizing: border-box;
+
+}
+.confirm_password-container{
+    position: relative;
+
+}
+.confirm_password-container input[type="password"],
+.confirm_password-container input[type="text"]{
+    width:70%;
+	border-radius: 3px;
+	border: 3px solid #9597a6;
+	padding: 10px;
+	outline: none;
+  box-sizing: border-box;
+
+}
+
+.fa-eye-slash{
+  position: absolute;
+  top: 49%;
+  right: 17%;
+  cursor: pointer;
+  color: black;
+}
+#toggle_pwd{
+ position: absolute;
+  top: 45%;
+  left: 65%;
+
+
+}
+#toggle_pwd2{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+
+}
+
+#password_info {
+    position:absolute;
+    bottom:100px;
+    bottom: -100px\9;
+    right:750px;
+    width:270px;
+    background:#fefefe;
+    font-size:.800em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+}
+#password_info h4 {
+    margin:0 0 10px 0;
+    padding:0;
+    font-weight:normal;
+}
+#password_info::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+.invalid {
+
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
+
+
+#password_info {
+    display:none;
+}
+.form_wrap ul{
+	padding: 8px 10px;
+	border-radius: 3px;
+	justify-content: center;
+}
+.form_wrap ul li:first-child{
+	margin-right: 15px;
+}
+.form_wrap ul .radio_wrap{
+	position: relative;
+	margin-bottom: 0;
+}
+
+.form_wrap ul .radio_wrap span{
+	display: inline-block;
+	font-size: 14px;
+	padding: 3px 20px;
+	border-radius: 3px;
+}
+.form_wrap .input_radio:checked ~ span{
+	background: #ebd0ce;
+}
+.form_wrap .submit_btn{
+	width: 65%;
+	background: hsl(0, 100%, 74%);
+	padding: 13px;
+	border: 0;
+	border-radius: 7px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-left:100%;
+}
+
+.form_wrap .submit_btn:hover{
+	background:  hsl(0, 100%, 74%);
+}

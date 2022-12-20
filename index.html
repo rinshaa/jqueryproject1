@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup Page</title>
+	<link  rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<script src="index.js"></script>
+
+</head>
+<body>
+
+	<main >
+ <div class="wrapper">
+	<div class="signup_form">
+		<div class="title">SignUp</div>
+
+        <form id="form_validation" class="form_validation" action="https://www.cybrosys.com/" method="post">
+			<div class="form_wrap">
+				<div class="input_grp">
+					<div class="input_wrap">
+						<label for="Name">Name:</label>
+						<input name="Name"  type="text" id="Name" required>
+						<h5 id="usercheck1" style="color: red;"></h5>
+						<h5 id="usercheck" style="color: red;"></h5>
+             <!---EMAIL-->
+					</div>
+                    <div class="input_wrap">
+					   <label for="Email">Email: </label>
+					   <input name="email" type="text" id="email" required>
+					   <h5 id="usercheck2" style="color: red;" ></h5>
+				    </div>
+			  <!----Address-->
+                    <div class="input_wrap">
+					   <label for="Address">Address: </label>
+						<textarea id="Address" rows="4" cols="30" required></textarea>
+				    </div>
+				<!--dob-->
+                    <div class="input_wrap">
+					   <label for="dob">Date of Birth: </label>
+					   <input dob="dob" type="date" id="dob" required>
+					   <h5 id="usercheck4" style="color: red;" ></h5>
+             <!----Age-->
+                    </div>
+                        <div class="input_wrap" >
+					   <label for="age">Age :</label>
+					   <input age="age" type="age"  id="age" required>
+				    </div>
+                  <!----gender-->      
+                    <div class="input_wrap">
+				       <h4 id="gender">Gender :</h4></br>
+				           <input type="radio" name="gender" value="Male" class="input" required >Male
+						   <input type="radio" name="gender" value="Famale" class="input" required>Famale <br>
+					</div>
+
+
+				<!---password-->
+                        <div class="password-container" >
+					   <label for="Password">Password: </label><br>
+				<div>	<input type="password" id="password" required></div>
+				<span id="toggle_pwd" class="fas fa-eye-slash"></span>
+					
+						</div>
+				<!----confirm password-->
+					<div class="confirm_password-container">
+							<label for="confirm-password"> Confirm Password:</label><br>
+                           <div><input type="password" id="confirm-password" required> </div>  
+						   <!-- <span id="toggle_pwd2" class="fas fa-eye-slash"></span> -->
+						<h5 id="CheckPasswordMatch" style="color: red;"></h5>
+				         </div>
+                         <div class="input_wrap">
+					        <input type="submit" style="margin-top: 20% " value="Submit" class="submit_btn" id="submit" >
+							
+
+				     </div>
+                </div>
+            </div>
+        </form>
+		<div id="password_info">
+    <h4> Password Must contain the following requirements:</h4>
+    <ul>
+        <li id="letter" class="invalid">At least <strong>one lower letter</strong></li>
+        <li id="capital" class="invalid">At least <strong>one uppercase</strong></li>
+        <li id="number" class="invalid">At least <strong>one number</strong></li>
+		<li id="special" class="invalid">At least <strong>one special character</strong></li>
+        <li id="length" class="invalid">Be at least <strong>8 or More characters</strong></li>
+    </ul>
+</div>
+    </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</main>
+</body>
+</html>
